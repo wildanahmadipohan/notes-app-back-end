@@ -1,0 +1,17 @@
+----- Step membuat notes-app-back-end ----
+1. init project | npm init --y
+2. install nodemon | npm i nodemon --save-dev
+3. install ESLint untuk membuat code javascript konsisten | npm i eslint --save-dev
+4. konfigurasi eslint | npx eslint --init
+5. menambahkan runner script untuk eslint | "lint": "eslint ./"
+6. membuat struktur folder proyek
+    src 
+        handler.js 
+        notes.js 
+        routes.js
+        server.js
+7. membuat HTTP Server dengan Hapi Framework | npm i @hapi/hapi
+8. membuat routes pada file routes.js untuk fungsi addCatatan dengan path '/notes' dengan method 'POST'
+9. membuat variabel penampung catatan di file notes.js
+10. membuat handler "addNoteHandler" untuk routes addCatatan di file handler.js
+11. intall nanoid untuk pembuatan id | npm i nanoid
